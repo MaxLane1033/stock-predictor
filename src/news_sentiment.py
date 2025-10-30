@@ -2,6 +2,7 @@ from typing import List, Tuple
 from .llm import LLMClient
 from .utils import fetch_text_from_url, majority_label
 
+# llm client is difficult, need to further refine this!
 
 def score_articles(ticker: str, urls: List[str]) -> Tuple[str, int, int]:
 	if not urls:
